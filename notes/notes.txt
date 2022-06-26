@@ -1,0 +1,17 @@
+# Cria uma model e a migration
+ - php artisan make:model Temporada -m
+ - php artisan make:model Episodio -m
+
+# Criar um controller
+ - php artisan make:controller TemporadasController
+ - php artisan migrate
+ - php artisan migrate:rollback
+
+
+ php artisan make:migration adiciona_campo_assistido --table=episodios
+
+# Hash
+ -@php artisan key:generate --ansi
+
+# Component
+ - php artisan make:component Alerta
